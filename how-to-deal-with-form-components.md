@@ -61,7 +61,11 @@ export default class MyFormCmp extends React.Component {
   render() {
     return (
       <form>
-        <input type="text" value={this.state.name} onChange={(e) => this.onChangeField(e, 'name')} />
+        <input
+          type="text"
+          value={this.state.name}
+          onChange={(e) => this.onChangeField(e, 'name')}
+        />
       </form>
     );
   }
@@ -100,9 +104,13 @@ export default class MyFormCmp extends React.Component {
 
 参考：[Two-Way Binding Helpers | React](https://facebook.github.io/react/docs/two-way-binding-helpers.html) ([日本語](https://facebook.github.io/react/docs/two-way-binding-helpers-ja-JP.html))
 
+冒頭に
+
 > ReactLink is deprecated as of React v15. The recommendation is to explicitly set the value and change handler, instead of using ReactLink.
 
-ただし、ES2015 で書いた React コンポーネントは、そのままでは Mixin を使うことができない。  
+とあるのでたぶん使わない。
+
+また、ES2015 で書いた React コンポーネントは、そのままでは Mixin を使うことができない。  
 [react-mixin](https://github.com/brigand/react-mixin) というライブラリを使う。
 
 参考：[React v0.13から使えるようになったES6のclass構文でmixinを使う - Qiita](http://qiita.com/enu-kuro/items/d21aeff1f3c11cda008f)
