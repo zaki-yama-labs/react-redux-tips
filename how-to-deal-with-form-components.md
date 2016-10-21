@@ -100,7 +100,7 @@ export default class MyFormCmp extends React.Component {
 }
 ```
 
-##### 3. (deprecated)[LinkedStateMixin](https://www.npmjs.com/package/react-addons-linked-state-mixin) というアドオンを使う
+#### 3. (deprecated)[LinkedStateMixin](https://www.npmjs.com/package/react-addons-linked-state-mixin) というアドオンを使う
 
 参考：[Two-Way Binding Helpers | React](https://facebook.github.io/react/docs/two-way-binding-helpers.html) ([日本語](https://facebook.github.io/react/docs/two-way-binding-helpers-ja-JP.html))
 
